@@ -16,7 +16,9 @@ $(function(){
 		$(data.data).each(function(index,obj){
 			str+="<li><img src="+obj.thumb+"></img>";
 			str+="<div class='info'><h6>"+obj.title+"</h6>";
-			str+="<p><img src='img/comment.png' class='comment'/><span>"+obj.comment_count+"</span><img src='img/remove.png' class='remove'/></p></div></li>"
+			str+="<span class='media'>"+obj.media+"</span>";
+			str+="<p><img src='img/comment.png' class='comment'/>"
+			str+="<span>"+obj.appProduct+"</span><img src='img/remove.png' class='remove'/></p></div></li>"
 		})
 		$(".news").html(str)
 	})

@@ -32,6 +32,8 @@ $c: 20;
                 }
                 .media{
                         margin-right: 30/$c+rem;
+                        position: absolute;
+                        bottom: 22/$c+rem;
                     }
                 .info{
                     position: relative;
@@ -59,8 +61,8 @@ $c: 20;
                         align-items:center;
                     }
                     img{
-                        width: 14/$c+rem;
-                        height:14/$c+rem;
+                        width: 12/$c+rem;
+                        height:12/$c+rem;
                         display: inline-block;
                     }
                     .remove{
@@ -68,8 +70,8 @@ $c: 20;
                         right:0;
                     }
                     .comment{
-                        width: 16/$c+rem;
-                        height:16/$c+rem;
+                        width: 14/$c+rem;
+                        height:14/$c+rem;
                     }
                 }
             }
