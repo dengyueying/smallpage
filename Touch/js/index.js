@@ -14,19 +14,21 @@ $(function(){
 	callback=`,function(data){
 		console.log(data)
 		$(data.data).each(function(index,obj){
-			str+="<li><a href="+obj.surl+"><img src="+obj.thumb+"></img>";
+			str+="<li><a href="+obj.surl+" class='link'><img src="+obj.thumb+"></img>";
 			str+="<div class='info'><h6>"+obj.title+"</h6>";
 			str+="<span class='media'>"+obj.media+"</span>";
 			str+="<p><img src='img/comment.png' class='comment'/>";
-			if(obj.comment_count){
-				obj.comment_count
-			}
-			else{
+			if(!obj.comment_count){
 				obj.comment_count=0;
 			}
 			str+="<span>"+obj.comment_count+"</span><img src='img/remove.png' class='remove'/></p></div></a></li>"
 			
 		})
-		$(".news").html(str)
-	})
+		$(".news").html(str);
+		$(".remove").on("tap",function(){
+			$(this).parent().parent().parent().remove();
+		})
+	});
+	
 })
+
