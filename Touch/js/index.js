@@ -18,14 +18,15 @@ $(function(){
 			str+="<div class='info'><h6>"+obj.title+"</h6>";
 			str+="<span class='media'>"+obj.media+"</span>";
 			str+="<p><img src='img/comment.png' class='comment'/>";
-			if(!obj.comment_count){
-				obj.comment_count=0;
+			if(!obj.comment_count_show){
+				obj.comment_count_show=0;
 			}
-			str+="<span>"+obj.comment_count+"</span><img src='img/remove.png' class='remove'/></p></div></a></li>"
+			str+="<span>"+obj.comment_count_show+"</span><img src='img/remove.png' class='remove'/></p></div></a></li>"
 			
 		})
 		$(".news").html(str);
-		$(".remove").on("tap",function(){
+		$(".remove").on("click",function(event){
+			event.preventDefault();
 			$(this).parent().parent().parent().remove();
 		})
 	});
