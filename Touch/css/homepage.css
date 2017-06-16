@@ -1,0 +1,14 @@
+.home-con .topline, .home-con .scribe { width: 16rem; height: 100%; }
+
+.home-con { flex: 1; width: 32rem; height: 100%; display: flex; }
+.home-con .topline { background: #ccc; overflow-y: auto; }
+.home-con .topline .news { width: 16rem; background: #fff; }
+.home-con .topline .news li { display: flex; align-items: center; padding: 1rem 0.5rem; box-sizing: border-box; border-bottom: 1px solid #f1f1f1; }
+.home-con .topline .news li img { width: 4rem; height: 3rem; }
+.home-con .topline .news li .info { position: relative; height: 3rem; flex: 1; margin-left: 1rem; box-sizing: border-box; margin-right: 0.5rem; }
+.home-con .topline .news li .info h6 { font-size: 0.7rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.home-con .topline .news li .info p { width: 100%; font-size: 0.6rem; position: absolute; bottom: 0; line-height: 0.6rem; }
+.home-con .topline .news li .info img { width: 0.7rem; height: 0.7rem; position: absolute; right: 0; }
+.home-con .scribe { background: #999; overflow-y: auto; }
+
+/*# sourceMappingURL=homepage.css.map */
