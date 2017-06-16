@@ -14,11 +14,18 @@ $(function(){
 	callback=`,function(data){
 		console.log(data)
 		$(data.data).each(function(index,obj){
-			str+="<li><img src="+obj.thumb+"></img>";
+			str+="<li><a href="+obj.surl+"><img src="+obj.thumb+"></img>";
 			str+="<div class='info'><h6>"+obj.title+"</h6>";
 			str+="<span class='media'>"+obj.media+"</span>";
-			str+="<p><img src='img/comment.png' class='comment'/>"
-			str+="<span>"+obj.appProduct+"</span><img src='img/remove.png' class='remove'/></p></div></li>"
+			str+="<p><img src='img/comment.png' class='comment'/>";
+			if(obj.comment_count){
+				obj.comment_count
+			}
+			else{
+				obj.comment_count=0;
+			}
+			str+="<span>"+obj.comment_count+"</span><img src='img/remove.png' class='remove'/></p></div></a></li>"
+			
 		})
 		$(".news").html(str)
 	})
