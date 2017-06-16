@@ -1,0 +1,128 @@
+* { margin: 0; padding: 0; }
+
+.mp { position: fixed; top: 0; width: 100%; background: #000; opacity: 0.3; z-index: 3; display: none; }
+
+ul { list-style: none; }
+
+.all .one .left .info .num, .all .one .center .box2 .info .num { font-size: 40px; color: #e61400; }
+
+.all .one .left .info .en, .all .one .center .box2 .info .en { font-size: 14px; color: #e61400; }
+
+.all .two .two-left .box6 .box6-1 .box6-1-1, .all .two .two-left .box6 .box6-1 .box6-1-2, .all .two .two-right { font-size: 26px; color: #fff; }
+
+.mlf { margin-left: 10px; }
+
+.mtop { padding-top: 10px; }
+
+.box { width: 150px; height: 150px; }
+
+.hidden { overflow: hidden; }
+
+.hover { position: relative; }
+.hover:hover .over { display: block; }
+.hover .over { display: none; box-sizing: border-box; position: absolute; width: 100%; height: 100%; z-index: 2; box-shadow: 0 0 0 6px #fff; }
+.hover .over img { position: absolute; top: 0; right: 0; }
+
+.all { margin: 50px auto 0; width: 950px; background: url(../img/bg_pattern.png); padding: 10px; }
+.all .head { padding-top: 20px; color: #fff; width: 100%; height: 80px; line-height: 80px; background: #000; }
+.all .head img { width: 50px; height: 50px; float: left; margin: 15px 0 0 20px; }
+.all .head span { float: left; font-size: 50px; margin-left: 20px; }
+.all .head ul { float: right; margin-top: 35px; }
+.all .head ul li { float: left; padding: 0 10px; height: 25px; line-height: 25px; }
+.all .head ul li.on { background: #19a2de; }
+.all .lunboqu { transition: all 0.5s; clear: both; text-align: center; width: 100%; height: 20px; margin-top: 10px; overflow: hidden; }
+.all .lunboqu .jia { width: 100%; height: 20px; line-height: 20px; background: #19a2de; }
+.all .lunboqu .lunbo { overflow: hidden; width: 100%; height: 360px; position: relative; }
+.all .lunboqu .lunbo .prve, .all .lunboqu .lunbo .next { position: absolute; top: 162px; font-size: 30px; color: #fff; z-index: 2; cursor: pointer; }
+.all .lunboqu .lunbo .prve { left: 0; }
+.all .lunboqu .lunbo .next { right: 0; }
+.all .lunboqu .lunbo .tup { height: 360px; position: relative; }
+.all .lunboqu .lunbo .tup li { width: 950px; height: 360px; position: absolute; display: none; }
+.all .lunboqu .lunbo .tup li.zindex { display: block; }
+.all .lunboqu .lunbo .dian { position: absolute; bottom: 5px; width: 100%; text-align: center; }
+.all .lunboqu .lunbo .dian li { display: inline-block; width: 20px; height: 10px; background: #19A2DE; margin: 10px; border: 1px solid #82d7fc; }
+.all .lunboqu .lunbo .dian li.on { background: #fff; }
+.all .lunboqu .pick { margin-top: 10px; clear: both; width: 100%; height: 80px; background: #19a2de; position: relative; padding-top: 30px; }
+.all .lunboqu .pick img { position: absolute; top: 20px; left: 15px; }
+.all .lunboqu .pick p { width: 820px; margin: 0 auto; font-size: 18px; color: #fff; text-align: left; font-family: "agency fb"; }
+.all .one .left { position: relative; width: 310px; height: 310px; }
+.all .one .left .pic { width: 620px; height: 100%; animation: box1 10s infinite linear; }
+.all .one .left .pic img { float: left; }
+.all .one .left .info { position: absolute; top: 20px; right: 20px; text-align: right; }
+.all .one .center .box2 { background: url(../img/bloglistbg.png); width: 310px; height: 150px; position: relative; }
+.all .one .center .box2 .box2-1 { width: 310px; animation: xh 5s infinite linear; }
+.all .one .center .box2 .box2-1 div { width: 310px; height: 150px; background: url(../img/placeholder/medium_blank.png); }
+.all .one .center .box2 .info { position: absolute; top: 20px; right: 20px; text-align: right; }
+.all .one .center .box2 .info .num { color: #8cbe29; }
+.all .one .center .box2 .info .en { color: #8cbe29; }
+.all .one .center .box3 { margin-top: 10px; }
+.all .one .center .box3 .box4 { float: left; }
+.all .one .center .box3 .box5 { float: left; }
+.all .one .center .box3 .box5 .box5-cnt { position: relative; }
+.all .one .center .box3 .box5 .box5-cnt .box5-1 { position: absolute; backface-visibility: hidden; background: url(../img/articles/quotation_2.png) no-repeat; transform: rotateX(180deg); animation: zm 4s linear infinite; }
+.all .one .center .box3 .box5 .box5-cnt .box5-2 { backface-visibility: hidden; position: absolute; background: url(../img/articles/quotation_1.png) no-repeat; animation: fm 4s linear infinite; }
+.all .one .right .right-box1 { height: 150px; }
+.all .one .right .right-box1 div { float: left; }
+.all .two { clear: both; }
+.all .two .two-left { float: left; width: 470px; }
+.all .two .two-left .box6 { width: 100%; }
+.all .two .two-left .box6 .box6-1 { float: left; }
+.all .two .two-left .box6 .box6-1 .box6-1-1, .all .two .two-left .box6 .box6-1 .box6-1-2 { position: relative; }
+.all .two .two-left .box6 .box6-1 .box6-1-1 p, .all .two .two-left .box6 .box6-1 .box6-1-2 p { position: absolute; left: 20px; bottom: 5px; }
+.all .two .two-left .box6 .box6-1 .box6-1-1 { background: red; }
+.all .two .two-left .box6 .box6-1 .box6-1-2 { background: #8cbe29; animation: xh 8s infinite linear; }
+.all .two .two-left .box6 .box6-2 { float: left; }
+.all .two .two-left .box6 .box6-2 img:nth-child(1) { backface-visibility: hidden; background: yellow; position: absolute; transform: rotateX(180deg); animation: zm 3s linear infinite; }
+.all .two .two-left .box6 .box6-2 img:nth-child(2) { backface-visibility: hidden; position: absolute; background: #19A2DE; animation: fm 3s linear infinite; }
+.all .two .two-left .box6 .box6-3 { float: left; }
+.all .two .two-left .box7 { clear: both; width: 100%; }
+.all .two .two-left .box7 .box7-1 { float: left; }
+.all .two .two-left .box7 .box7-2 { float: left; }
+.all .two .two-left .box7 .box7-2 .box7-2-1 { animation: xh 8s infinite linear; }
+.all .two .two-left .box7 .box7-2 .box7-2-1 img:nth-child(1) { background: greenyellow; }
+.all .two .two-left .box7 .box7-2 .box7-2-1 img:nth-child(2) { background: gold; margin-top: -4px; }
+.all .two .two-right { float: left; }
+.all .two .two-right .box8 { background: #19a2de; width: 310px; height: 310px; float: left; }
+.all .two .two-right .box8 p { margin-left: 30px; margin-top: -80px; animation: boxblue 4s infinite linear; }
+.all .two .two-right .box9 { float: left; }
+.all .two .two-right .box9 .box9-2 { margin-top: 10px; }
+.all .foot { width: 100%; height: 40px; }
+.all .foot .list li { width: 30px; height: 30px; background: #7f7f7f; margin-right: 10px; float: left; }
+.all .foot .list li:hover .tubiao { margin-left: -30px; }
+.all .foot .list li .tubiao { transition: all 0.4s; width: 60px; height: 100%; }
+.all .foot .list li .tubiao span { float: left; width: 30px; height: 30px; display: block; background: url(../img/social-mini.png) no-repeat; }
+.all .foot .list li .tubiao .hou { background: url(../img/social-mini.png) no-repeat -30px 0; }
+.all .foot .list li:nth-child(2) .qian { background: url(../img/social-mini.png) no-repeat 0 -30px; }
+.all .foot .list li:nth-child(2) .hou { background: url(../img/social-mini.png) no-repeat -30px -30px; }
+.all .foot .list li:nth-child(3) .qian { background: url(../img/social-mini.png) no-repeat 0 -60px; }
+.all .foot .list li:nth-child(3) .hou { background: url(../img/social-mini.png) no-repeat -30px -60px; }
+.all .foot .list li:nth-child(4) .qian { background: url(../img/social-mini.png) no-repeat 0 -180px; }
+.all .foot .list li:nth-child(4) .hou { background: url(../img/social-mini.png) no-repeat -30px -180px; }
+.all .foot .list li:nth-child(5) .qian { background: url(../img/social-mini.png) no-repeat 0 -210px; }
+.all .foot .list li:nth-child(5) .hou { background: url(../img/social-mini.png) no-repeat -30px -210px; }
+.all .foot .list li:nth-child(6) .qian { background: url(../img/social-mini.png) no-repeat 0 -240px; }
+.all .foot .list li:nth-child(6) .hou { background: url(../img/social-mini.png) no-repeat -30px -240px; }
+
+.all .content { width: 100%; }
+.all .content .left, .all .content .center, .all .content .right { width: 310px; height: 310px; float: left; }
+
+@keyframes zm { form { transform: rotateX(180deg); }
+  50% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-180deg); } }
+@keyframes fm { form { transform: rotateX(0deg); }
+  50% { transform: rotateX(180deg); }
+  100% { transition-delay: 1s; transform: rotateX(360deg); } }
+@keyframes xh { form { margin-top: 0px; }
+  15% { margin-top: 0px; }
+  40% { margin-top: -150px; }
+  60% { margin-top: -150px; }
+  85% { margin-top: 0px; }
+  100% { margin-top: 0px; } }
+@keyframes box1 { form { margin-left: 0px; }
+  50% { margin-left: -310px; }
+  100% { margin-left: 0px; } }
+@keyframes boxblue { form { margin-top: -80px; }
+  50% { margin-top: 50px; }
+  100% { margin-top: -80px; } }
+
+/*# sourceMappingURL=index.css.map */
