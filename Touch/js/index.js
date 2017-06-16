@@ -12,8 +12,12 @@ $(function(){
 	var str="";
 	$.getJSON(`http://proxy.e12e.com/?http://cre.dp.sina.cn/api/v3/get?
 	callback=`,function(data){
+		console.log(data)
 		$(data.data).each(function(index,obj){
-			console.log(obj)
+			str+="<li><img src="+obj.thumb+"></img>";
+			str+="<div class='info'><h6>"+obj.title+"</h6>";
+			str+="<p><img src='img/comment.png' class='comment'/><span>"+obj.comment_count+"</span><img src='img/remove.png' class='remove'/></p></div></li>"
 		})
+		$(".news").html(str)
 	})
 })
