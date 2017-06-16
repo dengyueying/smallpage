@@ -7,7 +7,7 @@
 .container .nav ul { display: flex; padding: 0.65rem 1.5rem; background: #fafafa; }
 .container .nav ul li { flex: 1; }
 .container .nav ul li a { color: #666; font-size: 0.6rem; display: flex; flex-direction: column; align-items: center; }
-.container .nav ul li a img { width: 1.5rem; height: 1.5rem; }
+.container .nav ul li a img { width: 1.2rem; height: 1.2rem; }
 .container .subnav { margin-top: 0.75rem; background: #fafafa; display: flex; flex-direction: column; padding: 0 1.5rem; }
 .container .subnav li { height: 2.25rem; line-height: 2.3rem; border-bottom: 1px solid #f1f1f1; }
 .container .subnav li:last-child { border-bottom: none; }
