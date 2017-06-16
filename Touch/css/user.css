@@ -1,5 +1,5 @@
 .container { font-size: 0.7rem; position: relative; }
-.container section { height: auto; overflow-y: auto; }
+.container section { overflow-y: auto; }
 .container .header { background: #FCDF19; width: 16rem; height: 5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .container .header img { width: 2.5rem; height: 2.5rem; border: 1px solid #FAFAFA; border-radius: 50%; }
 .container .header a { font-size: 0.6rem; color: #666; line-height: 1.5rem; }

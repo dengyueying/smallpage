@@ -13,10 +13,8 @@ $c: 20;
     font-size:14/$c+rem;
     position: relative;
     section{
-        height: auto;
         overflow-y: auto;    
     }
-    
     .header{
         background: $yellow;
         width: 16rem;
