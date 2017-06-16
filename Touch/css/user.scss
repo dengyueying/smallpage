@@ -18,11 +18,11 @@ $c: 20;
     .header{
         background: $yellow;
         width: 16rem;
-        height:5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10/$c+rem 0;
         img{
             width:2.5rem;
             height:2.5rem;
@@ -85,5 +85,6 @@ $c: 20;
         line-height:59/$c+rem;
         text-align: center;
         background: #fafafa;
+        margin-bottom: 15/$c+rem;
     }
 }
