@@ -12,6 +12,11 @@ $c: 20;
 .container{
     font-size:14/$c+rem;
     position: relative;
+    section{
+        height: auto;
+        overflow-y: auto;    
+    }
+    
     .header{
         background: $yellow;
         width: 16rem;
@@ -36,8 +41,6 @@ $c: 20;
     .nav{
         margin: 15/$c+rem 0;
         width: 100%;
-        height: auto;
-        overflow-y: auto;
         ul{
             display: flex;
             padding:13/$c+rem 30/$c+rem;
