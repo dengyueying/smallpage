@@ -17,7 +17,8 @@ window.onload=function(){
 						alert("请输入您的密码");
 					}
 					else{
-						alert("登录成功")
+						alert("登录成功");
+						open("index.html")
 					}
 				}
 				else{

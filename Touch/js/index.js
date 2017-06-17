@@ -1,11 +1,11 @@
 $(function(){
 	//首页上面的点击效果
 	$("#topline").on("tap",function(){
-		$(".home-con").animate({marginLeft:0});
+		$("#home-con").animate({marginLeft:0});
 		$(this).addClass("active").siblings().removeClass("active");
 	});
 	$("#subscribe").on("tap",function(){
-		$(".home-con").animate({marginLeft:"-16rem"});
+		$("#home-con").animate({marginLeft:"-16rem"});
 		$(this).addClass("active").siblings().removeClass("active");
 	});
 	
@@ -31,5 +31,9 @@ $(function(){
 		})
 	});
 	
+	//footer
+	$("#footlist li").click(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+	})
 })
 

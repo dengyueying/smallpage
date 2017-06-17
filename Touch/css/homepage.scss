@@ -11,12 +11,11 @@ $c: 20;
 .home-con {
     flex: 1;
     width: 32rem;
-    height: 100%;
     display: flex;
+    height: auto;
     overflow-y:auto;
     .topline {
         width: 16rem;
-        height: auto;
         background: #ccc;
         .news{
             width:16rem;
@@ -83,10 +82,5 @@ $c: 20;
                 }
             }
         }
-    }
-    .scribe {
-        @extend %gdw;
-        background: #999;
-        overflow-y: auto;
     }
 }
