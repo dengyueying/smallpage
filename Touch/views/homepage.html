@@ -1,37 +1,31 @@
-<header>
-	<ul class="head">
-		<li class="active" id="topline">
-			<span>头条</span>
-		</li>
-		<li id="subscribe"><span>订阅</span></li>
-		<li id="search">
-			<a href="search.html"><i class="glyphicon glyphicon-search"></i></a>
-		</li>
-	</ul>
-</header>
-<ul class="home-con" id="home-con">
-	<li class="topline">
+<div class="content">
+	<header>
+		<ul class="head">
+			<li class="active" id="topline">
+				<a>头条</a>
+			</li>
+			<li id="subscribe"><a href="#!subscr">订阅</a></li>
+			<li id="search">
+				<a href="search.html"><img src="img/homes.png"/></a>
+			</li>
+		</ul>
+	</header>
+	<div class="carousel">
+		<ul class="banner">
+			<li><img src="img/banner.png" alt="" /></li>
+			<li><img src="img/control.png" alt="" /></li>
+			<li><img src="img/banner.png" alt="" /></li>
+			<li><img src="img/control.png" alt="" /></li>
+			<li><img src="img/banner.png" alt="" /></li>
+			<li><img src="img/control.png" alt="" /></li>
+		</ul>
+		<ul class="point">
+			<span class="active"></span>
+		</ul>
+	</div>
+	
+	<div class="topline">
 		<ol class="news">
 		</ol>
-	</li>
-	<li class="scribe" ng-controller="subsp">
-		<div class="msg">
-			<h4>我的订阅</h4>
-		</div>
-		<ul class="list alllist">
-			<li ng-repeat="v in list" ng-click="chan($index)">
-				<span>{{v}}</span>
-				<img src="img/liridan/remove.png">
-			</li>
-		</ul>
-		<div class="msg">
-			<h4>订阅推荐</h4>
-		</div>
-		<ul class="list2 alllist">
-			<li ng-repeat="v in list2" ng-click="chan1($index)">
-				<span>{{v}}</span>
-				<img src="img/liridan/true.png">
-			</li>
-		</ul>
-	</li>
-</ul>
+	</div>
+</div>

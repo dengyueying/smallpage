@@ -42,7 +42,7 @@ $c: 20;
     section {
         flex: 1;
         width: 16rem;
-        overflow: hidden;
+        overflow-y:auto;
         display: flex;
         flex-direction: column;
         header {
@@ -50,6 +50,11 @@ $c: 20;
             height: 2.5rem;
             background: $yellow;
             border-bottom: 1px solid #aaa;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            color: #333;
             .head {
                 width: 100%;
                 height: 100%;
@@ -60,23 +65,28 @@ $c: 20;
                     flex: 1;
                     text-align: center;
                     font-weight: bold;
-                    color: $gray;
+                    a{
+                        color:#666;
+                    }
                     &:first-child {
                         text-align: right;
                     }
                     &:last-child {
                         text-align: left;
                         a{
-                            color:$gray;
                             display: block;
                             width: 100%;
                             height: 100%;
                             line-height: 100%;
+                            img{
+                                width:16/$c+rem;
+                                height:16/$c+rem;
+                            }
                         }
                     }
                 }
                 .active {
-                    span {
+                    a{
                         position: relative;
                         color:#333; 
                         &::after{

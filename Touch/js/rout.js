@@ -10,15 +10,17 @@ var app=angular.module("app",["ngRoute"]);
 		})
 		.when("/homepage",{
 			templateUrl:"views/homepage.html",
+		}).otherwise({
+			redirectTo:"/homepage",
 		})
 		.when("/video",{
 			templateUrl:"views/video.html",
 		})
-		.otherwise({
-			redirectTo:"/homepage",
-		})
 		.when("/enroll",{
 			templateUrl:"views/enroll.html",
+		})
+		.when("/subscr",{
+			templateUrl:"views/subscr.html",
 		})
 	});
 	app.controller("main",function($scope){
