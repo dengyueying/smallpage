@@ -1,4 +1,11 @@
 $c:20;
+
+.head{
+    img{
+        width:16/$c+rem;
+        height:16/$c+rem;
+    }
+}
 .circlelist{
     margin-top: 2.5rem;
     li{

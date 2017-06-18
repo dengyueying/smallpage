@@ -12,6 +12,6 @@
 .container .usercont .sub-nav li { height: 2.25rem; line-height: 2.3rem; border-bottom: 1px solid #f1f1f1; }
 .container .usercont .sub-nav li:last-child { border-bottom: none; }
 .container .usercont .sub-nav li a { color: #333; }
-.container .usercont .out { color: #FB4B4A; width: 16rem; height: 2.9rem; line-height: 2.95rem; text-align: center; background: #fafafa; margin-bottom: 0.75rem; }
+.container .usercont .out { color: #FB4B4A; width: 16rem; height: 3.2rem; line-height: 2.95rem; text-align: center; background: #fafafa; margin-bottom: 0.75rem; }
 
 /*# sourceMappingURL=user.css.map */

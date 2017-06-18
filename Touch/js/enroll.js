@@ -5,6 +5,9 @@ window.onload=function(){
 		var txt=$("#txt");
 		var passw=$("#password");
 		var btn=$("#btn");
+		var zhuc=$("#zhuc");
+		var reg=$("#register");
+		var dl=$("#denglu");
 
 
 		btn.onclick=function(){
@@ -30,5 +33,11 @@ window.onload=function(){
 		txt.onkeyup=function(){
 			passw.value=="";
 		}
-
+		zhuc.onclick=function(){
+			reg.style.top=0;
+		}
+		dl.onclick=function(){
+			reg.style.top=3000+"px";
+		}
+	
 }		

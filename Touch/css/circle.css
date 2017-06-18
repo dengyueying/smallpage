@@ -1,3 +1,5 @@
+.head img { width: 0.8rem; height: 0.8rem; }
+
 .circlelist { margin-top: 2.5rem; }
 .circlelist li { position: relative; padding: 0 0.5rem 0.3rem; box-sizing: border-box; }
 .circlelist li .broadcast { width: 100%; height: 8rem; position: relative; }
