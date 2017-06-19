@@ -160,7 +160,7 @@ input::-webkit-input-placeholder{
         flex-direction: column;
         align-items: center;
         border-top: 1px solid #ddd;
-        span{
+        >span{
             color: #333;
             height:20/$c+rem;
             line-height:20/$c+rem;
@@ -175,6 +175,7 @@ input::-webkit-input-placeholder{
                 width: 20/$c+rem;
                 height: 20/$c+rem;
             }
+            
         }
     }
     #register{
