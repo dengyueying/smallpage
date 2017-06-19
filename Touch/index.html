@@ -17,7 +17,9 @@
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		
 		<script type="text/javascript" src="js/rout.js" ></script>
-		<script type="text/javascript" src="js/index.js"></script>
+		<!--<script type="text/javascript" src="js/index.js"></script>-->
+		
+		<script type="text/javascript" src="module/homepage.js" ></script>
 		
 		<script>
 			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
@@ -29,8 +31,8 @@
 			<section>
 				<ng-view></ng-view>
 			</section>
-			<footer>
-				<ul id="footlist" ng-controller="main">
+			<footer ng-controller="main">
+				<ul id="footlist" v in list>
 					<li class="active">
 						<a href="#!homepage">
 							<p></p>

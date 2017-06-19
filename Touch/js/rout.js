@@ -1,4 +1,4 @@
-var app=angular.module("app",["ngRoute"]);
+var app=angular.module("app",["ngRoute","hmd"] );
 	
 	app.config(function($routeProvider){
 		$routeProvider
@@ -10,6 +10,7 @@ var app=angular.module("app",["ngRoute"]);
 		})
 		.when("/homepage",{
 			templateUrl:"views/homepage.html",
+			controller:"homecont",
 		}).otherwise({
 			redirectTo:"/homepage",
 		})
@@ -23,6 +24,7 @@ var app=angular.module("app",["ngRoute"]);
 			templateUrl:"views/subscr.html",
 		})
 	});
+	
 	app.controller("main",function($scope){
 		
 	}).controller("subsp",function($scope){

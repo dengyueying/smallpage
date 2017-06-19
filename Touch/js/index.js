@@ -1,3 +1,8 @@
+var amodule=angular.module("amodule",[]);
+	amodule.controller("a",["$scope","$routeParams",function($s,$rp){
+		$s.content="apage 11111111";
+	}])
+
 $(function(){
 	// 头条
 	//轮播
@@ -18,7 +23,7 @@ $(function(){
 	
 	$.getJSON(`http://proxy.e12e.com/?http://cre.dp.sina.cn/api/v3/get?
 	callback=`,function(data){
-//		console.log(data)
+		
 		$(data.data).each(function(index,obj){
 			str+="<li><a href="+obj.surl+" class='link'><img src="+obj.thumb+"></img>";
 			str+="<div class='info'><h6>"+obj.title+"</h6>";
@@ -75,10 +80,13 @@ $(function(){
 	});
 	
 	//footer
-	$("#footlist li").click(function(){
+	$("#footlist li").on("tap",function(){
 		$(this).addClass("active").siblings().removeClass("active")
 	});
-	
+	$(".fhui").on("tap",function(){
+		alert("aaa");
+		$("#footlist li").eq(3).addClass("active").siblings().removeClass("active")
+	});
 	//注册
 })
 

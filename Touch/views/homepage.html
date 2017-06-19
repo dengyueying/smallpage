@@ -24,8 +24,21 @@
 		</ul>
 	</div>
 	
-	<div class="topline">
+	<div class="topline" ng-app="hmd" ng-controller="homecont">
 		<ol class="news">
+		 	<li ng-repeat="v in list">
+		 		<a href="{{v.surl}}" class="link">
+		 			<img src="{{v.thumb}}" />
+					<div class="info">
+						<h6>{{list.title}}</h6>
+					    <span class="media">{{v.media}}</span>
+						<p><img src="img/comment.png" class="comment"/>
+							<span>{{v.comment_count_show}}</span>
+							<img src="img/remove.png" class="remove"/>
+						</p>
+					</div>
+		 		</a>
+		 	</li>
 		</ol>
 	</div>
 </div>
