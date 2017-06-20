@@ -153,8 +153,8 @@ input::-webkit-input-placeholder{
         }
     }
     .other{
-        position: fixed;
-        bottom: 40/$c+rem;
+        position:absolute;
+        top: 340/$c+rem;
         width: 16rem;
         display: flex;
         flex-direction: column;

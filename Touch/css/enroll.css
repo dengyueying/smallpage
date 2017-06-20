@@ -26,7 +26,7 @@ input::-webkit-input-placeholder { font-size: 0.7rem; color: #ccc; }
 .container section .getback { width: 16rem; background: #fafafa; margin-top: 1.5rem; border-top: 1px solid #f1f1f1; box-sizing: border-box; padding: 0 0.5rem; }
 .container section .getback li { height: 2.5rem; line-height: 2.5rem; border-bottom: 1px solid #f1f1f1; position: relative; }
 .container section .getback li span { position: absolute; right: 0; }
-.container .other { position: fixed; bottom: 2rem; width: 16rem; display: flex; flex-direction: column; align-items: center; border-top: 1px solid #ddd; }
+.container .other { position: absolute; top: 17rem; width: 16rem; display: flex; flex-direction: column; align-items: center; border-top: 1px solid #ddd; }
 .container .other > span { color: #333; height: 1rem; line-height: 1rem; font-size: 0.5rem; margin-top: -0.5rem; background: #EBEBEB; padding: 0 0.4rem; }
 .container .other p { margin-top: 0.75rem; }
 .container .other p img { width: 1rem; height: 1rem; }

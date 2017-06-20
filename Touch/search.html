@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>触控时讯-搜索页</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/search.js" ></script>
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+	         <a href="index.html" id="back"></a>
+             <div id="search">
+             	<img src="img/liridan/homes.png" />
+             	<input type="search" id="txt"  class="blur" placeholder="请输入关键字..." />
+             	<img src="img/liridan/sys.png" />
+             </div>
+             <div id="cancel">搜索</div>
+			</header>
+			<section>
+				<ul class="entsk">
+					<li class="enstsk">
+						<div class="history">
+							<h4>历史记录</h4>
+							<img src="img/liridan/remove.png" id="eliminate">
+						</div>
+						<ul class="list" id="list">
+
+						</ul>
+						<div class="history">
+							<h4>热门搜索</h4>
+						</div>
+						<ul class="list">
+							<li>
+								<span>儿子太帅被求出道</span>
+							</li>
+							<li>
+								<span>环保区域限购再度升级</span>
+							</li>
+							<li>
+								<span>勒索病毒肆虐高校</span>
+							</li>
+							<li>
+								<span>MP3格式正式终结</span>
+							</li>
+							<li>
+								<span>蓝鲸发明者终入狱</span>
+							</li>								
+							<li>
+								<span>假冒僧人强行化缘</span>
+							</li>
+							<li>
+								<span>韩国总统保镖爆红</span>
+							</li>
+							<li>
+								<span>女童饭店叫喊被踹</span>
+							</li>								
+						</ul>
+                         <ul id="show">
+                         	
+                         </ul>
+
+					</li>
+				</ul>
+
+			</section>
+		</div>
+	</body>
+
+</html>
