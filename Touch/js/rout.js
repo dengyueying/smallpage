@@ -17,6 +17,7 @@ var app=angular.module("app",["ngRoute","hmd","hcl"] );
 		})
 		.when("/video",{
 			templateUrl:"views/video.html",
+			controller:"circont",
 		})
 		.when("/enroll",{
 			templateUrl:"views/enroll.html",
