@@ -1,22 +1,14 @@
-.carousel { margin-top: 2.5rem; width: 16rem; height: 6rem; overflow: hidden; position: relative; }
-.carousel .banner { display: flex; }
-.carousel .banner li { width: 16rem; }
-.carousel .banner li img { width: 16rem; height: 6rem; }
-.carousel .point { width: 16rem; position: absolute; bottom: 0; left: 0; display: flex; height: 1rem; line-height: 1rem; justify-content: center; align-items: center; }
-.carousel .point span { width: 0.4rem; height: 0.4rem; border-radius: 50%; margin: 0 0.25rem; background: #ccc; }
-.carousel .point .active { background: #FCDF19; }
-
-.topline { width: 16rem; background: #ccc; }
+.topline { width: 16rem; background: #ccc; margin-top: 2.5rem; }
 .topline .news { width: 16rem; background: #fff; }
-.topline .news li { align-items: center; border-bottom: 1px solid #f1f1f1; }
+.topline .news li { align-items: center; border-bottom: 1px solid #f1f1f1; position: relative; }
 .topline .news li a { display: block; width: 100%; height: 100%; display: flex; padding: 0.75rem 0.5rem; box-sizing: border-box; }
 .topline .news li img { width: 4rem; height: 3rem; }
-.topline .news li .info { position: relative; height: 3rem; flex: 1; margin-left: 1rem; box-sizing: border-box; margin-right: 0.5rem; font-size: 0.4rem; color: #666; }
+.topline .news li .info { position: relative; height: 3rem; flex: 1; margin-left: 0.5rem; box-sizing: border-box; font-size: 0.4rem; color: #666; }
 .topline .news li .info h6 { font-size: 0.6rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: #333; }
 .topline .news li .info .media { margin-right: 1.5rem; position: absolute; bottom: 0.8rem; }
 .topline .news li .info p { width: 100%; height: 0.8rem; position: absolute; bottom: 0; display: flex; align-items: center; }
 .topline .news li .info img { width: 0.6rem; height: 0.6rem; display: inline-block; }
-.topline .news li .info .remove { position: absolute; right: 0; z-index: 99; }
 .topline .news li .info .comment { width: 0.7rem; height: 0.7rem; }
+.topline .news li .remove { position: absolute; width: 0.6rem; height: 0.6rem; right: 0.5rem; z-index: 99; bottom: 0.8rem; }
 
 /*# sourceMappingURL=homepage.css.map */

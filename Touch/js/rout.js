@@ -1,9 +1,10 @@
-var app=angular.module("app",["ngRoute","hmd"] );
+var app=angular.module("app",["ngRoute","hmd","hcl"] );
 	
 	app.config(function($routeProvider){
 		$routeProvider
 		.when("/circle",{
 			templateUrl:"views/circle.html",
+			controller:"circont",
 		})
 		.when("/user",{
 			templateUrl:"views/user.html",
@@ -26,7 +27,9 @@ var app=angular.module("app",["ngRoute","hmd"] );
 	});
 	
 	app.controller("main",function($scope){
-		
+		$scope.addclass=function(){
+			console.log(this)
+		}
 	}).controller("subsp",function($scope){
 		$scope.list=[
 		"推荐","娱乐","时尚","电影","美食","宠物"];

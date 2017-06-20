@@ -79,11 +79,16 @@ window.onload=function(){
 		
 		zhuc.onclick=function(){
 			reg.style.top=0;
+			txt.value="";
+			passw.value="";
 		}
 		dl.onclick=function(){
 			reg.style.top=3000+"px";
 			phone.value="";
 			passw.value="";
 		}
-	
+		
+		txt.onkeyup=function(){
+			passw.value="";
+		}
 }		
