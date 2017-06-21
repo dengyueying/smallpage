@@ -18,7 +18,7 @@ input::-webkit-input-placeholder { font-size: 0.7rem; color: #ccc; }
 .container section .nav ul li .password { background: url(../img/password.png); -webkit-background-size: 100% 100%; background-size: 100% 100%; }
 .container section .nav ul li .indent { text-indent: 1.5rem; }
 .container section .nav .submit { background: #fafafa; height: 1.5rem; line-height: 1.5rem; margin-top: 0.75rem; border: 1px solid #DFDFDF; -webkit-border-radius: 0.15rem; border-radius: 0.15rem; text-align: center; color: #999; }
-.container section .last { width: 16rem; text-align: center; font-size: 0.6rem; color: #333; margin-top: 1.5rem; }
+.container section .last { width: 16rem; text-align: center; font-size: 0.5rem; color: #333; margin-top: 1.5rem; }
 .container section .forget { width: 16rem; position: relative; margin-top: 1.5rem; }
 .container section .forget a { position: absolute; font-size: 0.6rem; color: #F2CB58; top: 0; }
 .container section .forget a:first-child { left: 0.5rem; }
