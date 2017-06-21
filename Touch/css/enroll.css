@@ -1,6 +1,6 @@
 header { width: 16rem; height: 2.5rem; background: #FCDF19; border-bottom: 1px solid #aaa; color: #333; }
 
-input { outline: none; border: none; width: 7rem; background: #fafafa; height: 1rem; line-height: 1rem; }
+input { outline: none; border: none; width: 7rem; background: #fafafa; height: 1rem; line-height: 1rem;font-size: 0.5rem;}
 
 input::-webkit-input-placeholder { font-size: 0.7rem; color: #ccc; }
 

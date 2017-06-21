@@ -18,7 +18,8 @@ header #search { width: 10rem; height: 1.5rem; -webkit-border-radius: 0.15rem; b
 header #search img { width: 0.6rem; height: 0.6rem; position: absolute; top: 0.45rem; }
 header #search img:first-child { left: 0.2rem; }
 header #search img:last-child { right: 0.2rem; }
-header #search .blur { border: 0; height: 100%; width: 100%; -webkit-border-radius: 0.3rem; border-radius: 0.3rem; -webkit-background-size: 0.7rem 0.7rem; background-size: 0.7rem 0.7rem; background-position: 0.2rem 0.2rem; padding: 0 1.3rem; outline: none; }
+header #search .blur { border: 0; height: 100%; width: 100%; -webkit-border-radius: 0.3rem; border-radius: 0.3rem; -webkit-background-size: 0.7rem 0.7rem; background-size: 0.7rem 0.7rem; background-position: 0.2rem 0.2rem; padding: 0 1.3rem; outline: none;font-size: 0.5rem;}
+.blur::-webkit-input-placeholder { font-size: 0.5rem; color: #ccc; }
 header #cancel { position: absolute; top: 0.7rem; right: 0.9rem; font-size: 0.6rem; color: #524E32; }
 
 section { height: 100%; background: #EBEBEB; }
