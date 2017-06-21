@@ -20,7 +20,7 @@ hcl.factory("mydata", function($q) {
 hcl.controller("circont", ["$scope", "$routeParams", "mydata", function($scope, $routeParams, mydata) {
 	mydata.then(function(data) {
 		console.log(data);
-		$scope.arr = data
-	})
+		$scope.arr = data;
+	});
 
 }]);

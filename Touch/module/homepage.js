@@ -3,10 +3,7 @@ var hmd=angular.module("hmd",[]);
 			$http.get(`http://proxy.e12e.com/?http://cre.mix.sina.com.cn/api/v3/get?
 			callback=`).then(function(data){
 					$scope.list=data.data.data;
-					console.log(data.data.data)
-					if(!$scope.list.comment_count_show){
-						$scope.list.comment_count_show=0;
-					};
+//					console.log(data.data.data)
 			});
 			
 			$scope.remove=function(i){
