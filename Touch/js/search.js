@@ -49,7 +49,7 @@ $(function(){
 			$("#list").empty("");
 		})
 		$("#txt").click(function(){
-		  $(this).attr("placeholder","");
+		  $("#show").html("");
 		})
 	  	
 	})
