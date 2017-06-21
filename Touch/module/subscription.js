@@ -1,6 +1,6 @@
 
-var app=angular.module("app",[]);
-app.controller("subsp",function($scope){
+var asea=angular.module("asea",[]);
+asea.controller("subsp",function($scope){
 	$scope.list=[
 	"推荐","娱乐","时尚","电影","美食","宠物"];
 	$scope.list2=[
