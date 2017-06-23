@@ -37,16 +37,21 @@ window.onload=function(){
 					if(phone.value!=""&&zcword.value!=""){
 						if(/^[1][5,3,,7,8]\d{9}$/.test(phone.value)){
 							if(/^[a-zA-Z0-9]{6,12}$/.test(zcword.value)){
-								if(zcword.value==indent.value){
-									db.transaction(function(tx){
-										tx.executeSql("insert into zh (zh,pass) values(?,?)",[phone.value,zcword.value],function(){
-											alert("注册成功");
-											reg.style.top=3000+"px";
-										});
-									});	
+								if(!indent.value==""){
+									if(zcword.value==indent.value){
+										db.transaction(function(tx){
+											tx.executeSql("insert into zh (zh,pass) values(?,?)",[phone.value,zcword.value],function(){
+												alert("注册成功");
+												reg.style.top=3000+"px";
+											});
+										});	
+									}
+									else{
+										alert("请再次确认密码");
+									}	
 								}
 								else{
-									alert("请再次确认密码");
+									alert("请确认密码");
 								}
 							}
 							else{
@@ -90,5 +95,9 @@ window.onload=function(){
 		
 		txt.onkeyup=function(){
 			passw.value="";
+		}
+		phone.onkeyup=function(){
+			indent.value="";
+			zcword.value="";
 		}
 }		
